@@ -188,10 +188,11 @@ var updateMap = function() {
      */
     var addPlaneMarker = function(plane) {
 		var image_path = plane.seen > PLANE_TIMEOUT - 10 ? "media/plane_gray.png" : "media/plane_black.png";
+		var rotate = String(plane.track) + "deg";
 		var newMarker = new L.Marker([plane.lat, plane.lon], {
 				icon:new L.DivIcon({
 						className:"infoPanel",
-						html:'<img style="transform:rotate(' + String(plane.track) + "deg)\" src=\"" + image_path + "\" />" +
+						html:"<img style=\"transform:rotate(" + rotate + "); -moz-transform:rotate(" + rotate + ");\" src=\"" + image_path + "\" />" +
 							'<div class="infoText">' + planeToInfoPanel(plane) + '</div>',
 						iconSize:[36,36]
 					})
