@@ -1,29 +1,52 @@
 body {
-    overflow: scroll;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;"
+	overflow:scroll;
 }
 
 #planeMap {
-    height: 90%;
+    height:100%;
 }
 
 #infoDiv {
     min-width: 100%;
     overflow: scroll;
 }
+.control {
+	background-color:rgba(255,255,255,0.5);
+}
+.infobox {
+	max-height:132px;
+	overflow-y:scroll;
+	margin:0 !important;
+	font-size:11px;
+}
 
 .infoText {
     padding: 4px;
-    min-width: 150px;
-    background-color: black;
-    color: white;
-    font-family: "Lucida Console", Monaco, monospace;
-    opacity: 0;
+    min-width:110px;
+	background-color:white;
+	color:black;
+	font-family:Monaco, monospace;
+	font-size:80%;
+	white-space:nowrap;
+	overflow-x:hidden;
+	opacity:0.75;
+	z-index:0 !important;
 }
 
 .infoText a {
-    color: blanchedalmond;
+	color:blanchedalmond;
+	color:#d2691e;
 }
 
 .infoPanel:hover .infoText, .infoText:hover {
-    opacity: 1;
+	opacity:1;
+	z-index:10000 !important;
+}
+
+.infoPanel:hover, .infoText:hover .infoPanel {
+	z-index:10000 !important;
 }
