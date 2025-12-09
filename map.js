@@ -55,9 +55,9 @@ window.planeAnnouncements = [];
 
 // === Leaflet map setup ===
 var planeMap = L.map("planeMap").setView(INITIAL_POSITION, INITIAL_ZOOM_LEVEL);
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(planeMap);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+		attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(planeMap);
 L.marker(RECEIVER_POSITION, {
 		icon:new L.Icon.Default({iconSize:[12,20], iconAnchor:[6,20], shadowSize:[20,20]}),
 		zIndexOffset:-1000
