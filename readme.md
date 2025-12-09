@@ -20,7 +20,7 @@ Once you're serving the website, just navigate to it in a web browser (only test
 Hover over a plane on the map for more info.
 
 ## Screenshot
-![Sample screenshot](https://i.imgur.com/qcztJHm.jpg)
+![Sample screenshot](screenshots/2.jpg)
 
 ## FAQ
 ### Cross-Origin Errors
