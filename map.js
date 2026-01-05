@@ -1,6 +1,6 @@
 /*
 Copyright (c) 2019 Sam Lord
-Copyright 2018-2025 Rivoreo
+Copyright 2018-2026 Rivoreo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -74,6 +74,7 @@ var info_div = info_box.addTo(planeMap).getContainer();
 L.DomEvent.on(info_div, "click dblclick mousemove mousedown mousewheel wheel drag scroll select", L.DomEvent.stopPropagation);
 var update_indicator = new DivControl({ className:"control", position:"topright" });
 var update_indicator_div = update_indicator.addTo(planeMap).getContainer();
+L.control.scale({ position:"bottomright" }).addTo(planeMap);
 
 // Heatmap setup
 var heat = L.heatLayer([], {radius:10}).addTo(planeMap);
